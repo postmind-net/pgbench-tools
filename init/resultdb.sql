@@ -4,7 +4,7 @@ DROP TABLE IF EXISTS testset;
 CREATE TABLE testset(
   set serial PRIMARY KEY,
   info text
-  );
+  ) DISTRIBUTE BY REPLICATION;
 
 DROP TABLE IF EXISTS tests;
 CREATE TABLE tests(

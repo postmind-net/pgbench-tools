@@ -25,7 +25,7 @@ OSDATA=1
 
 # Test/result database connection
 TESTHOST=localhost
-TESTUSER=postgres
+TESTUSER=pom
 TESTPORT=5432
 TESTDB=pgbench
 
