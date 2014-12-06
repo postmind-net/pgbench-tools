@@ -24,7 +24,7 @@ TABBED=0
 OSDATA=1
 
 # Test/result database connection
-TESTHOST=localhost
+TESTHOST=localhost #10.240.152.131 #localhost
 TESTUSER=pom
 TESTPORT=5432
 TESTDB=pgbench
@@ -40,11 +40,11 @@ RESULTDB=results
 
 # Set this to a number only when using pgbench 9.0 or later.  This will set
 # the number of worker threads up to this maximum for each client count
-MAX_WORKERS=""
+MAX_WORKERS="1"
 
 SCRIPT="select.sql"
-SCALES="10 25 50 75 100 250 500 750 1000 5000 10000"
-SETCLIENTS="8 16 32 64 128"
+SCALES="1000" #"10 50 100 500 1000"
+SETCLIENTS="8 16 32 64"
 SETTIMES=3
 
 # RUNTIME is in seconds.  If it is specified, then TOTTRANS is ignored.
